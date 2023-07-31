@@ -20,6 +20,13 @@ product << Book.new(
   amount: 10
 )
 
+leon = Movie.new(title: 'Леон', year: '1994', director: 'Люк Бессон', price: 990, amount: 5)
+
 puts "Вот какие товары у нас есть:"
 puts
 product.each { |product| puts product }
+
+
+puts "Вот так они изменилися Леон"
+leon.update(amount: 1000)
+puts leon

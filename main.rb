@@ -30,3 +30,6 @@ product.each { |product| puts product }
 puts "Вот так они изменилися Леон"
 leon.update(amount: 1000)
 puts leon
+
+films_from_file = Book.from_file('./data/books/01.txt')
+puts films_from_file
